@@ -9,27 +9,27 @@ pre: " <b> 7. </b> "
 ### General Evaluation
 
 **1. Working Environment & Workspace**  
-The working environment is highly professional, dynamic, and emphasizes proactiveness. Colleagues are consistently friendly and create favorable conditions for interns to integrate quickly with the team's pace. However, due to the hybrid nature of the work, I propose introducing short sync-up sessions or periodic internal tech-talks to facilitate knowledge sharing and team bonding.  
-Office registration is quite challenging. With a large number of interns, on-site capacity is often insufficient. I noticed that 2x session credits were only awarded for Speaking registrations toward the end of the internship. Therefore, I hope the team can support Speaking sessions on weekdays—holding Speaking in the morning and dedicated group project research time in the afternoon. Anyone registering for a Speaking session should receive one credit for Speaking plus one credit for the afternoon session, rather than waiting until the end of the internship term to offer 2x credits for Speaking participants.
+The work environment feels professional, fast-moving, and rewards initiative. Everyone on the team was friendly and made it easy to get up to speed with how the team operates. That said, since the work has a hybrid element, I'd suggest adding short sync-up sessions or regular internal tech talks to keep knowledge flowing and the team connected.  
+Getting an office seat is genuinely difficult — with so many interns, on-site capacity runs out fast. I also noticed the 2x session credit for Speaking registrations only kicked in near the end of the program. I'd love to see Speaking sessions supported on weekdays too — Speaking in the morning, dedicated time for group project research in the afternoon — with anyone who signs up for Speaking getting credit for both the Speaking slot and the afternoon session, rather than only rolling out the 2x credit near the program's end.
 
 **2. Mentorship & Support Team**  
-Mentors do not merely assign tasks; they guide problem-solving mindsets exceptionally well. Instead of step-by-step handholding as in other companies, at AWS, I was always encouraged to research documentation independently and propose solutions first. If technical issues persisted, I could ask for help in the WhatsApp group. Team members responded enthusiastically and promptly, ensuring interns never had to wait long.
+Mentors here don't just hand out tasks — they're genuinely good at coaching how to think through a problem. Rather than the step-by-step hand-holding I'd expect elsewhere, AWS pushed me to dig through documentation and come up with my own proposal first. When I was still stuck, the WhatsApp group was there to help, and people responded quickly and enthusiastically — I never had to wait long for an answer.
 
 **3. Alignment with Academic Background**  
-Project tasks closely aligned with the foundational knowledge I learned at university. Moreover, applying these concepts to a real-world system required me to continuously update and expand into new domains (such as system design principles and Serverless architecture), effectively bridging the gap between theory and practice.
+The project work lined up well with what I'd studied in school. At the same time, applying those fundamentals to a real system pushed me to keep learning new areas — system design principles, Serverless architecture — which did a lot to close the gap between theory and practice.
 
 **4. Key Learnings & Skill Acquisition**  
-Through direct hands-on project experience, I significantly enhanced my programming skills, debugging capabilities, and familiarity with Agile workflows. Beyond technical hard skills, acquiring valuable soft skills—such as time management, progress reporting, and meticulous technical documentation—has provided me with invaluable assets for the future.
+Hands-on work on the project noticeably sharpened my programming and debugging skills and got me comfortable with Agile workflows. Beyond the technical side, I picked up soft skills I'll carry forward — time management, reporting progress clearly, and writing careful technical documentation.
 
 **5. Corporate Culture & Team Spirit**  
-Teamwork spirit was distinctly evident. Even as an intern, my contributions and ideas were always heard and respected. During crunch phases to accelerate project timelines, everyone cross-supported each other regardless of seniority, fostering a positive and cohesive work culture.
+The sense of teamwork really stood out. Even as an intern, my ideas and input were always taken seriously. During crunch periods when timelines got tight, people helped each other out regardless of seniority, which made for a genuinely positive, cohesive culture.
 
 **6. Intern Benefits & Support Policies**  
-The company's intern support policies are very fair. Work flexibility (evaluated based on result-oriented outcomes) and opportunities to attend weekly Saturday events were major highlights. These events deepened my understanding of industry practices outside academia and introduced me to new concepts I had never encountered before.
+The company's intern support policies felt genuinely fair. Being evaluated on results rather than rigid hours, plus the chance to attend the weekly Saturday events, were real highlights — those events gave me a much better sense of how the industry works outside of school and introduced me to ideas I hadn't come across before.
 
 ### Personal Reflections
-- **What I appreciated most** during this internship was exposure to a professional enterprise environment like AWS Cloud, along with valuable career insights shared by experienced professionals during weekly events.  
-- I am **more than willing to recommend** this internship program to peers in the same major. The sole reason is that this internship is well worth experiencing once, as the knowledge gained exceeded all expectations.  
+- **What stuck with me most** from this internship was getting to work inside a professional enterprise environment like AWS Cloud, plus the career insights experienced professionals shared during the weekly events.  
+- I'd **happily recommend** this program to classmates in the same field — simply because it's worth going through at least once, and what I took away from it went well beyond what I expected.  
 
 ### Recommendations & Future Direction
-- If given the opportunity to commit long-term or return to work at the company, I would be more than ready to do so.
+- Given the chance to stay on longer-term or come back to work here, I'd take it without hesitation.
