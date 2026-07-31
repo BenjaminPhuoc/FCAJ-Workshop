@@ -13,7 +13,7 @@ pre: " <b> 1.1. </b> "
 ### Task Progress
 | Day | Task | Start Date | Completion Date | Reference Sources |
 | --- | --- | --- | --- | --- |
-| Mon | - FCAJ Kickoff meeting. Team agreed on using GitHub for code management.<br>- Task division: I handle MLOps/Pipeline; my teammate manages Frontend/API. | 06/01/2026 | 06/01/2026 | [GitHub Get Started](https://docs.github.com/en/get-started) |
+| Mon | - FCAJ Kickoff meeting. Team agreed on using GitHub for code management. | 06/01/2026 | 06/01/2026 | [GitHub Get Started](https://docs.github.com/en/get-started) |
 | Tue | - Reviewed documentation on core services: EC2, S3, VPC, and safe IAM Role permission assignment practices. | 06/02/2026 | 06/02/2026 | [AWS IAM Documentation](https://docs.aws.amazon.com/iam/) |
 | Wed | - Activated AWS account MFA.<br>- Successfully installed AWS CLI v2 on personal laptop. | 06/03/2026 | 06/03/2026 | [AWS CLI v2 User Guide](https://docs.aws.amazon.com/cli/latest/userguide/) |
 | Thu | - Researched Amazon EC2 in-depth (instance types, EBS volume attachment). | 06/04/2026 | 06/04/2026 | [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/) |
