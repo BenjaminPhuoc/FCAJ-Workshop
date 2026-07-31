@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là những món quà và những khoảnh khắc rất tuyệt vời.
+Trong thời gian thực tập, em có dịp tham gia 2 sự kiện, mỗi sự kiện đều để lại ấn tượng khó quên với nhiều kiến thức mới mẻ, thiết thực, cùng những món quà và khoảnh khắc đáng nhớ.
 
 ### [Event 1](4.1-Event1/)
 &emsp;**Tên sự kiện:** Multiplayer Game Networking Workshop
@@ -18,12 +18,12 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
 
 &emsp;**Mô tả ngắn gọn nội dung và hoạt động chính trong sự kiện:** 
-Sự kiện tập trung chia sẻ chuyên sâu về các giao thức mạng trong game nhiều người chơi (HTTP Polling, UDP, WebSocket). Diễn giả hướng dẫn chi tiết quy trình xây dựng hệ thống WebSocket Serverless trên AWS (sử dụng API Gateway, Lambda, DynamoDB, CloudWatch) kết hợp với demo lập trình mạng Client trên Godot Engine. Ngoài ra, sự kiện còn giới thiệu giải pháp dùng công nghệ Containerization (Docker) để đóng gói ứng dụng.
+Buổi chia sẻ đi sâu vào các giao thức mạng dùng cho game nhiều người chơi (HTTP Polling, UDP, WebSocket), sau đó hướng dẫn từng bước dựng hệ thống WebSocket Serverless trên AWS (API Gateway, Lambda, DynamoDB, CloudWatch), kèm demo lập trình mạng phía Client trên Godot Engine. Bên cạnh đó, sự kiện cũng giới thiệu cách đóng gói ứng dụng bằng công nghệ Containerization (Docker).
 
 &emsp;**Kết quả hoặc giá trị đạt được:** 
-* **Kiến thức kỹ thuật:** Hiểu cách thiết kế kiến trúc mạng Serverless cho Game, nắm được cách lưu trữ phi quan hệ trên DynamoDB và biết cách viết Dockerfile đóng gói ứng dụng thành một môi trường Sandbox cô lập.
-* **Tư duy hệ thống:** Nhận thức được bài học về sự đánh đổi (Trade-offs) trong thiết kế hệ thống giữa hiệu năng, độ tin cậy và chi phí. 
-* **Kinh nghiệm thực tế:** Học được cách ý thức trong việc tối ưu hoá chi phí Cloud, nắm bắt cách xử lý ngoại lệ (disconnect đột ngột) và định hướng ứng dụng các kỹ thuật này vào đồ án/dự án cá nhân.
+* **Kiến thức kỹ thuật:** Nắm được cách thiết kế kiến trúc mạng Serverless cho game, cách lưu trữ dữ liệu phi quan hệ trên DynamoDB, và biết viết Dockerfile để đóng gói ứng dụng vào môi trường Sandbox cô lập.
+* **Tư duy hệ thống:** Hiểu rõ hơn về sự đánh đổi (trade-off) giữa hiệu năng, độ tin cậy và chi phí khi thiết kế hệ thống.
+* **Kinh nghiệm thực tế:** Rèn thêm ý thức tối ưu chi phí Cloud, biết cách xử lý các tình huống ngoại lệ (mất kết nối đột ngột), và hình dung được cách áp dụng những kỹ thuật này vào đồ án/dự án cá nhân.
 
 
 ### [Event 2](4.2-Event2/)
@@ -36,9 +36,9 @@ Sự kiện tập trung chia sẻ chuyên sâu về các giao thức mạng tron
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
 
 &emsp;**Mô tả ngắn gọn nội dung và hoạt động chính trong sự kiện:** 
-Sự kiện bao gồm 2 hoạt động chính: Trận chung kết cuộc thi Cloud Architect đấu trí trắc nghiệm về các giải pháp kiến trúc đám mây trên AWS và Chuỗi Tech Talk chuyên sâu từ các chuyên gia. Các chủ đề được chia sẻ bao gồm: Ứng dụng AI/Multi-agent trong bảo mật đám mây (DevSecOps), Quản trị SLA & hệ thống Monitoring trong doanh nghiệp bằng CloudWatch, SNS và lộ trình bí quyết ôn luyện chứng chỉ AWS CLF-C02.
+Sự kiện gồm 2 phần: trận chung kết cuộc thi Cloud Architect với các câu hỏi trắc nghiệm tình huống về kiến trúc đám mây trên AWS, và chuỗi Tech Talk chuyên sâu từ các chuyên gia trong ngành, xoay quanh việc ứng dụng AI/Multi-agent trong bảo mật đám mây (DevSecOps), quản trị SLA & hệ thống Monitoring bằng CloudWatch, SNS, cùng lộ trình ôn luyện chứng chỉ AWS CLF-C02.
 
 &emsp;**Kết quả hoặc giá trị đạt được:** 
-* **Kiến thức chuyên môn:** Hiểu rõ cách phối hợp các dịch vụ AWS nâng cao cho hạ tầng lớn, tiếp cận xu hướng tự động hóa bảo mật với Generative AI và nhận thức sâu sắc rằng mục tiêu của Monitoring là đảm bảo luồng trải nghiệm người dùng (Customer Journey) tuân thủ cam kết SLA.
-* **Kỹ năng thực hành:** Nắm vững cách thiết lập Dashboard và tự cấu hình các Metric Alarms, cảnh báo mất kết nối qua SNS trên AWS. Học được các mẹo loại trừ, phân tích keyword hiệu quả để tự tin thi chứng chỉ AWS Practitioner.
-* **Phát triển bản thân:** Rèn luyện kỹ năng quan sát, tư duy phản biện khi phân tích các đáp án kiến trúc thực tế, qua đó định hình rõ con đường phát triển chuyên môn nghề nghiệp ở mảng Cloud/DevOps.
+* **Kiến thức chuyên môn:** Hiểu thêm cách phối hợp các dịch vụ AWS nâng cao trong hạ tầng quy mô lớn, tiếp cận xu hướng tự động hóa bảo mật bằng Generative AI, và nhận ra mục tiêu cốt lõi của Monitoring là giữ cho trải nghiệm người dùng (Customer Journey) không bị gián đoạn, đúng cam kết SLA.
+* **Kỹ năng thực hành:** Biết cách dựng Dashboard, tự cấu hình Metric Alarms và thiết lập cảnh báo mất kết nối qua SNS trên AWS; đồng thời học được mẹo loại trừ đáp án và phân tích từ khóa để tự tin hơn khi thi AWS Practitioner.
+* **Phát triển bản thân:** Rèn được khả năng quan sát và tư duy phản biện khi phân tích các tình huống kiến trúc thực tế, từ đó định hình rõ hơn hướng đi nghề nghiệp ở mảng Cloud/DevOps.

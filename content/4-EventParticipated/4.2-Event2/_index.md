@@ -9,57 +9,57 @@ pre: " <b> 4.2. </b> "
 # SUMMARY REPORT: CLOUD ARCHITECT & TECH TALK EVENT (JUNE 11)
 
 ## 1. Brief Description of Event Content & Core Activities
-The event consisted of two primary activity segments: The Cloud Architect Competition Finals and a Series of In-Depth Technical Presentations (Tech Talks) by 3 speakers representing tech enterprises.
+The event ran in two parts: the Cloud Architect Competition Finals, followed by a series of in-depth Tech Talks from 3 speakers representing different tech companies.
 
 ### A. Activity 1: Cloud Architect Competition Finals ("Ao Lang" Award)
-- **Format:** Cloud architecture scenario-based multiple-choice contest between the top competing teams (KLK AST Team vs. Ngu Dai Hiep Team).
-- **Core Topics Covered:** Real-world AWS engineering challenges including:
-  - Selecting IaaS models (EC2) and compliant storage device decommissioning processes following safety standards.
-  - Enforcing the Principle of Least Privilege for S3 bucket access.
-  - High-throughput UDP load balancing solutions for multiplayer gaming combined with key-value databases (NLB + DynamoDB).
+- **Format:** A scenario-based multiple-choice contest on cloud architecture between the top two finalist teams (KLK AST Team vs. Ngu Dai Hiep Team).
+- **Core Topics Covered:** Real-world AWS engineering scenarios, including:
+  - Choosing IaaS models (EC2) and following compliant decommissioning processes for storage devices.
+  - Enforcing least-privilege access for S3 buckets.
+  - High-throughput UDP load balancing for multiplayer games paired with a key-value database (NLB + DynamoDB).
   - Automated EC2 error remediation using CloudWatch Logs, Metric Filters & Alarms.
-  - Secure content delivery from S3 via CloudFront using Origin Access Control (OAC).
-  - Designing low-latency, high-bandwidth hybrid connectivity between On-premises data centers and multi-region VPCs (Direct Connect Gateway).
-  - Migrating large-scale MySQL databases (25TB) from On-premises to AWS with minimal downtime (AWS DMS / DataSync / Aurora Replication).
-  - Automating AMI/EC2 updates using CloudFormation paired with Systems Manager Parameter Store.
+  - Securely serving content from S3 via CloudFront using Origin Access Control (OAC).
+  - Designing low-latency, high-bandwidth hybrid connectivity between on-prem data centers and multi-region VPCs (Direct Connect Gateway).
+  - Migrating a large-scale MySQL database (25TB) from on-prem to AWS with minimal downtime (AWS DMS / DataSync / Aurora Replication).
+  - Automating AMI/EC2 updates with CloudFormation and Systems Manager Parameter Store.
 
-### B. Activity 2: Expert Sharing Series by Tech Speakers
+### B. Activity 2: Expert Talk Series
 
 #### Topic 1: Applying AI in Cloud Security with AWS Security Agent
-*(Speaker: Mr. Thinh - DevOps/DevSecOps Engineer)*
-- Analyzed the limitations of traditional Pentesting (high costs of $5,000–$20,000/run, human dependency, time-consuming).
-- Introduced AWS Security Agent leveraging Multi-agent AI / Bedrock to automate: Design Security Reviews (evaluating architecture against PCI-DSS & Well-Architected Framework), Code Reviews (CI/CD integration, Pull Request auditing on GitHub/GitLab), and automated System Pentesting.
-- Highlighted practical limitations: Current lack of automated support for complex MFA authentication flows (SSO, Email OTP) or specialized protocols such as mTLS.
+*(Speaker: Mr. Thinh — DevOps/DevSecOps Engineer)*
+- Broke down the limitations of traditional pentesting: expensive ($5,000–$20,000 per run), dependent on people, and slow.
+- Introduced the AWS Security Agent, which uses multi-agent AI / Bedrock to automate design security reviews (checking architecture against PCI-DSS and the Well-Architected Framework), code reviews (CI/CD integration, PR auditing on GitHub/GitLab), and automated system pentesting.
+- Called out the current gaps: no automated handling yet for complex MFA flows (SSO, email OTP) or specialized protocols like mTLS.
 
 #### Topic 2: SLA Governance & Monitoring Systems in Enterprise Practice
-*(Speaker: Mr. Nam - Infrastructure/Reliability Engineer)*
-- Explained the importance of SLAs (Service Level Agreements) and accountability in upholding commitments to customers.
-- Clarified key perspectives: Healthy Infrastructure does not guarantee a Healthy UX if the application suffers from logical connection failures.
-- Risk Governance Lifecycle: Identify Risk → Monitor Signal → Response (SOP/SNS) → Log & Improve.
-- Live Demo: Building a CloudWatch Dashboard and configuring database disconnection alerts between EC2 (Back-end) and RDS PostgreSQL via AWS SNS.
+*(Speaker: Mr. Nam — Infrastructure/Reliability Engineer)*
+- Walked through why SLAs matter and what it means to actually honor commitments to customers.
+- Made the point that healthy infrastructure doesn't guarantee a healthy user experience if the application itself has logical connection failures.
+- Risk governance lifecycle: Identify Risk → Monitor Signal → Response (SOP/SNS) → Log & Improve.
+- Live demo: building a CloudWatch dashboard and configuring disconnection alerts between EC2 (backend) and RDS PostgreSQL via AWS SNS.
 
-#### Topic 3: Roadmap & Preparation Strategies for the AWS Certified Cloud Practitioner (CLF-C02)
+#### Topic 3: Roadmap & Prep Strategy for the AWS Certified Cloud Practitioner (CLF-C02)
 *(Speaker: Mr. Huy)*
-- Overview of the AWS Certification path (Foundational, Associate, Professional, Specialty).
-- Structure of the CLF-C02 exam: 65 multiple-choice questions, 120 minutes (includes a 30-minute accommodation for non-native English speakers), passing score of 700/1000, 3-year validity ($100 exam fee).
-- Domain weights across 4 areas: Cloud Concepts (24%), Security & Compliance (30%), Cloud Technology & Services (34%), Billing & Pricing (12%).
-- Exam tactics: Process of Elimination, Keyword Mapping, hands-on practice via AWS Free Tier, and "Flag for Review" techniques.
+- Overview of the AWS certification tiers (Foundational, Associate, Professional, Specialty).
+- CLF-C02 exam structure: 65 multiple-choice questions, 120 minutes (plus a 30-minute extension for non-native English speakers), 700/1000 passing score, 3-year validity, $100 fee.
+- Domain weighting: Cloud Concepts (24%), Security & Compliance (30%), Cloud Technology & Services (34%), Billing & Pricing (12%).
+- Exam tactics: process of elimination, keyword mapping, hands-on practice via AWS Free Tier, and using the "Flag for Review" feature.
 
 ## 2. Key Results & Value Gained
 
 ### A. Professional Knowledge & Lessons Learned
-- **Cloud Architecture & Infrastructure:** Deepened understanding of orchestrating advanced AWS services (Direct Connect, CloudFront OAC, Auto Scaling, SQS, DMS) to solve large-scale infrastructure challenges requiring high availability (HA) and cost optimization.
-- **Security Automation (DevSecOps):** Exposed to cutting-edge trends in applying Generative AI / Multi-agent frameworks to code vulnerability auditing and security design right from the planning phase.
-- **Enterprise Operations Mindset (SRE/Reliability):** Realized that the ultimate goal of monitoring is not just keeping server indicators "green," but ensuring continuous customer journeys and maintaining strict SLA commitments.
+- **Cloud Architecture & Infrastructure:** Got a firmer grasp on orchestrating advanced AWS services (Direct Connect, CloudFront OAC, Auto Scaling, SQS, DMS) for large-scale infrastructure that needs both high availability and cost efficiency.
+- **Security Automation (DevSecOps):** Saw firsthand how generative AI / multi-agent frameworks are starting to reshape vulnerability auditing and security-by-design from the planning stage onward.
+- **Enterprise Operations Mindset (SRE/Reliability):** Took away that monitoring isn't really about keeping dashboards "green" — it's about keeping the customer journey uninterrupted and honoring SLA commitments.
 
 ### B. Newly Acquired Skills
-- **Hands-on Monitoring Configuration:** Mastered custom Metric Alarms on CloudWatch, setting up alerting matrices via AWS SNS, and bridging connectivity health checks between EC2 and RDS tiers.
-- **International Certification Preparation:** Mastered keyword analysis techniques, process-of-elimination strategies, and time allocation tactics for AWS Practitioner/Associate exams.
+- **Hands-on Monitoring Configuration:** Learned to build custom CloudWatch metric alarms, wire up alert matrices through AWS SNS, and bridge health checks between the EC2 and RDS tiers.
+- **International Certification Prep:** Picked up keyword analysis, process-of-elimination strategy, and time management tactics for the AWS Practitioner/Associate exams.
 
 ## 3. Practical Participation Summary & Accumulated Experience
-- **Absorbing Real-World Practices:** Direct attendance helped bridge academic theory with real-world enterprise incident management (such as connection drops between back-ends and databases, faulty script executions, or financial penalty risks from SLA breaches).
-- **Soft Skills Refinement:** Developed critical thinking and analytical skills when evaluating cloud architecture options during the contest; learned live troubleshooting presentation styles from senior engineers.
-- **Career Path Orientation:** Clearly shaped learning roadmaps in Cloud/DevOps, setting structured milestones to earn AWS certifications to strengthen professional portfolios and enhance career competitiveness.
+- **Absorbing Real-World Practices:** Attending in person helped connect academic theory to the kind of incidents companies actually deal with — backend-to-database disconnects, broken automation scripts, or the financial risk of missing an SLA.
+- **Soft Skills Refinement:** Sharpened critical thinking while working through the competition's architecture scenarios, and picked up some presentation habits watching senior engineers do live troubleshooting.
+- **Career Path Orientation:** Came away with a clearer roadmap for Cloud/DevOps learning, with concrete AWS certification milestones to strengthen my professional profile.
 
 ![Event2](/images/4-EventParticipated/event_11-6-26/1.png)
 ![Event2](/images/4-EventParticipated/event_11-6-26/2.png)

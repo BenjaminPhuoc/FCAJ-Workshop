@@ -9,95 +9,95 @@ pre: " <b> 4.1. </b> "
 # MULTIPLAYER GAME NETWORKING WORKSHOP SUMMARY REPORT
 
 ## Event Objectives
-* **Share network architecture protocols** in multiplayer game development.
-* **Introduce workflows** for building Serverless WebSocket systems on AWS.
-* **Guide Client-side network programming** using the Godot Game Engine.
-* **Introduce application packaging solutions** using Containerization technology (Docker).
+* **Cover networking protocols** used in multiplayer game development.
+* **Walk through the workflow** for building Serverless WebSocket systems on AWS.
+* **Demonstrate client-side network programming** using the Godot Game Engine.
+* **Introduce application packaging** with Containerization technology (Docker).
 
 ---
 
 ## Key Highlights
 
-### 1. Analysis of Multiplayer Game Networking Protocols
+### 1. Comparing Multiplayer Game Networking Protocols
 * **HTTP Polling:**
-  * Mechanism: Client continuously sends requests to check for Server updates.
-  * Drawbacks: Long response times (High Latency), causing system overhead.
-  * Use Cases: Suitable only for simple features like Login or Leaderboards.
+  * Mechanism: Client repeatedly requests updates from the server.
+  * Drawbacks: High latency, adding overhead to the system.
+  * Use Cases: Fine for simple features like login or leaderboards, nothing more.
 * **UDP (User Datagram Protocol):**
-  * Mechanism: Fast packet transmission protocol that accepts packet loss in exchange for ultra-low latency.
-  * Use Cases: Optimized for high-speed games (FPS, MOBA, Racing).
-  * In Godot: Enhanced as the ENet library.
+  * Mechanism: Fast packet delivery that tolerates packet loss in exchange for very low latency.
+  * Use Cases: The go-to for fast-paced games (FPS, MOBA, racing).
+  * In Godot: Wrapped as the ENet library.
 * **WebSocket:**
-  * Mechanism: Persistent two-way connection protocol delivering better real-time performance than HTTP Polling and more reliable data control.
-  * Use Cases: Selected as the optimal solution for the Rock-Paper-Scissors demo game.
+  * Mechanism: A persistent two-way connection that beats HTTP Polling on real-time performance and gives more reliable data control.
+  * Use Cases: Chosen as the best fit for the Rock-Paper-Scissors demo.
 
-### 2. Setting Up Serverless WebSocket on AWS
-The network logic processing system is built using 4 core services:
-* **API Gateway:** Routes connections by configuring routes: `$connect`, `$disconnect`, and `$default` (using JSON format based on `request.body.action`).
-* **Lambda Function:** Handles business logic for connection/disconnection events and message transmission.
-* **DynamoDB Table:** Stores match data and player states across 5 main columns: `Connection ID`, `Status` (waiting/playing), `Opponent ID`, `Choice` (rock/paper/scissors), and `Create At` (timestamp).
-* **CloudWatch:** Automatically records system logs to monitor data flows and facilitate debugging.
+### 2. Building a Serverless WebSocket Setup on AWS
+The network logic runs on 4 core services:
+* **API Gateway:** Routes connections through `$connect`, `$disconnect`, and `$default` routes (JSON-based, keyed on `request.body.action`).
+* **Lambda Function:** Handles the business logic for connect/disconnect events and message delivery.
+* **DynamoDB Table:** Stores match data and player state across 5 main columns: `Connection ID`, `Status` (waiting/playing), `Opponent ID`, `Choice` (rock/paper/scissors), and `Create At` (timestamp).
+* **CloudWatch:** Logs system activity automatically to help trace data flow and debug issues.
 
 ### 3. Client-Side Programming in Godot Engine
-Handles 4 primary tasks to maintain game connectivity:
-* **Initialization:** Establishes connection to the API Gateway URL via the `WebSocketPeer` object.
-* **Message Polling:** Continuously checks data returned from the server (similar to checking a mailbox) to prevent system overload.
-* **State Management:** Tracks 4 WebSocket states—`Connecting`, `Open`, `Closing`, and `Closed`—to issue appropriate Matchmaking requests.
-* **Data Processing:** Parses incoming JSON packets from the Server to handle game outcomes.
+Four main jobs keep the game connection alive:
+* **Initialization:** Opens a connection to the API Gateway URL through the `WebSocketPeer` object.
+* **Message Polling:** Continuously checks for data from the server (like checking a mailbox) without overloading the system.
+* **State Management:** Tracks the 4 WebSocket states — `Connecting`, `Open`, `Closing`, `Closed` — to trigger the right matchmaking requests.
+* **Data Processing:** Parses incoming JSON packets from the server to resolve game outcomes.
 
-### 4. Applying Containerization Technology (Docker)
-* **Resolving Environment Conflicts:** Permanently eliminates configuration mismatch issues ("works on my machine but fails on yours").
-* **Virtual Machine vs Container Comparison:** Virtual Machines (VMs) are heavy and resource-intensive because they boot separate Operating Systems (OS); Containers are significantly lighter as they share the host OS via a Container Engine.
-* **Docker Cache/Layer Mechanism:** Builds images using a layered approach that stores history from previous steps, rebuilding only from modified layers $\rightarrow$ Optimizes packaging time.
+### 4. Applying Containerization (Docker)
+* **Solving Environment Mismatches:** Kills the classic "works on my machine, breaks on yours" problem for good.
+* **VM vs. Container:** VMs are heavy since each one boots its own OS; containers are far lighter because they share the host OS through a container engine.
+* **Docker Cache/Layer Mechanism:** Images build in layers that cache earlier steps, so only changed layers get rebuilt — cutting packaging time significantly.
 
 ---
 
 ## Key Takeaways
 
 ### Design Mindset
-* **Real-World Error Scenarios:** Understood how to handle sudden disconnection exceptions (unavoidable network drops) to prevent "Ghost Connections" in DynamoDB that cause matchmaking errors for new players.
-* **Performance Optimization:** Realized that executing `Scan Table` operations on DynamoDB for matchmaking creates bottlenecks under high user concurrency, highlighting the need for dedicated centralized management solutions.
-* **System Resource Management:** Understood Lambda's Stateless nature to design appropriate data storage structures when implementing reconnection features.
+* **Real-World Failure Scenarios:** Learned how to handle sudden disconnects (an unavoidable network reality) to avoid "ghost connections" in DynamoDB that break matchmaking for new players.
+* **Performance Optimization:** Realized that `Scan Table` calls on DynamoDB for matchmaking become a bottleneck once concurrency ramps up, which is why centralized, purpose-built management matters.
+* **System Resource Management:** Understood Lambda's stateless nature well enough to design the right storage structure for reconnection features.
 
 ### Technical Architecture
-* **Deep Network Programming:** Mastered JSON packet transmission structures and writing synchronization source code between the Game Client and Cloud Server.
-* **Practical Applications of Docker:** Learned to author complete `Dockerfile` setups (commands like `FROM`, `RUN`, `COPY`, `EXPOSE`...) and understood the underlying mechanics of `docker run -it` to create fully isolated sandbox environments for security testing and server-protecting malware isolation.
+* **Deep Network Programming:** Got comfortable with JSON packet structures and writing sync logic between the game client and cloud server.
+* **Practical Docker Skills:** Learned to write a complete `Dockerfile` (`FROM`, `RUN`, `COPY`, `EXPOSE`, etc.) and understood what `docker run -it` actually does under the hood — enough to spin up fully isolated sandboxes for security testing and malware isolation.
 
 ### Future Directions
-* **AWS GameLift Adoption:** Adopted mindsets for hosting game servers on dedicated EC2 clusters and integrating advanced automated matchmaking algorithms for large-scale projects.
+* **AWS GameLift:** Took away a mental model for hosting game servers on dedicated EC2 clusters and layering in advanced automated matchmaking for larger projects.
 
 ---
 
 ## Practical Applications to Work
 
-1. **Applying WebSocket Mechanics:** Upgrade real-time network communication modules for personal projects or course assignments instead of using traditional HTTP.
-2. **Building Serverless Clusters on AWS:** Experiment with combining API Gateway and Lambda for applications with asynchronous data pipelines.
-3. **Standardizing Application Packaging Workflows:** Utilize Docker for product packaging, creating uniform execution environments across all team members to optimize development workflows.
-4. **Applying Sandbox Containers:** Leverage Docker's application isolation mechanics to support safer software testing and security check workflows.
+1. **Applying WebSocket Mechanics:** Swap in real-time WebSocket communication for personal projects or coursework instead of defaulting to plain HTTP.
+2. **Building Serverless Clusters on AWS:** Try combining API Gateway and Lambda for apps that need asynchronous data pipelines.
+3. **Standardizing Packaging Workflows:** Use Docker to package deliverables so every team member runs the exact same environment, streamlining the dev workflow.
+4. **Using Sandbox Containers:** Lean on Docker's isolation model to make software testing and security checks safer.
 
 ---
 
 ## Lessons Learned & Personal Reflections
 
-Attending this workshop was an invaluable experience that provided deep technical insights into computer networking applied to the gaming industry and modern DevOps mindsets.
+This workshop turned out to be genuinely valuable — deep technical grounding in networking for gaming, plus a solid dose of modern DevOps thinking.
 
 ### 1. Learning from Real-World Insights
-* The speaker shared hard-earned lessons regarding system failures, design patterns, and network infrastructure management optimized for both performance and operational costs.
-* Through in-depth analyses of UDP, WebSocket, and DynamoDB storage mechanisms, I gained a clearer understanding of handling asynchronous data within distributed systems.
+* The speaker shared hard-won lessons on system failures, design patterns, and running network infrastructure that balances performance against cost.
+* Digging into UDP, WebSocket, and DynamoDB's storage model gave me a much clearer picture of how asynchronous data gets handled in distributed systems.
 
 ### 2. Hands-On Technical Experience
-* Observed live connection demos between the Game Client (Godot) and Server (AWS), visually tracing data flows from initial Client requests to DynamoDB status updates.
-* Mastered debugging and system monitoring techniques using CloudWatch and deep interactive commands inside Docker containers via terminal interfaces.
+* Watched a live connection demo between the game client (Godot) and the server (AWS), tracing the data flow from the client's first request all the way to DynamoDB's status update.
+* Picked up debugging and monitoring techniques using CloudWatch, plus some deeper terminal-level interaction with Docker containers.
 
 ### 3. Applying Modern Technology Mindsets
-* Understood the critical importance of virtualization and application packaging using Docker to free developers from environment configuration headaches.
-* Learned to apply Docker Containers as flexible, secure "Sandbox" environments for testing and system security checks.
+* Came to appreciate just how much Docker's virtualization and packaging model saves developers from environment-configuration headaches.
+* Learned to treat Docker containers as a flexible, secure "sandbox" for testing and security checks.
 
 ### 4. Conclusion & Core Lessons
-* **Every system design involves Trade-offs** between performance, reliability, and cost. No single protocol or technology is universally perfect—only the most suitable option for a specific business domain exists.
-* **Cloud Cost Optimization Awareness:** When working with Cloud environments, always maintain discipline to audit and shut down unused servers/services (such as EC2 clusters or databases) to prevent unexpected charges during development (The Cloud Invoice Lesson).
+* **Every system design is a trade-off** between performance, reliability, and cost — no protocol or technology wins across the board, only the one that best fits a given problem.
+* **Cloud cost discipline matters:** stay in the habit of auditing and shutting down unused resources (EC2 clusters, databases, etc.) so a development sprint doesn't turn into a surprise bill (a lesson learned the hard way from a "cloud invoice" moment).
 
-> **Summary:** The event provided not only deep technical networking knowledge but also transformed my mindset regarding system architecture design, Cloud infrastructure optimization, and software packaging standardization for real-world engineering projects.
+> **Summary:** Beyond the technical depth on networking, this event shifted how I think about system architecture, cloud infrastructure optimization, and standardizing software packaging for real engineering work.
 
 ![Event1](/images/4-EventParticipated/event_6-6-26/1.png)
 ![Event1](/images/4-EventParticipated/event_6-6-26/2.png)
