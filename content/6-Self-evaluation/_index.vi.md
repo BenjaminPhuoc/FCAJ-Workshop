@@ -5,7 +5,7 @@ weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
-Trong suốt kỳ thực tập tại **AWS** từ **01-06-2026** đến **30-06-2026**, tôi đã có cơ hội quý giá để đưa những kiến thức học ở trường vào áp dụng trong một môi trường làm việc thực tế.
+Trong suốt kỳ thực tập tại **AWS** từ **01-06-2026** đến **30-07-2026**, tôi đã có cơ hội quý giá để đưa những kiến thức học ở trường vào áp dụng trong một môi trường làm việc thực tế.
 
 Trong kỳ thực tập, tôi được phân công tham gia trực tiếp vào dự án **"AI Pulmonary Diagnostic Suite"** — một nền tảng ứng dụng trí tuệ nhân tạo để hỗ trợ chẩn đoán bệnh lý phổi. Giai đoạn đầu tự tay dựng một luồng `MLOps` tự động và triển khai mô hình AI trên kiến trúc `Serverless` (`Amazon S3, SageMaker, Lambda`, `API Gateway`) không hề dễ dàng. Nhưng chính quá trình đó đã giúp tôi nâng cao rõ rệt kỹ năng lập trình `Python`, tư duy thiết kế hệ thống trên `Cloud`, khả năng debug và xử lý sự cố khi hệ thống vận hành, cũng như thói quen viết tài liệu kỹ thuật cẩn thận hơn.
 

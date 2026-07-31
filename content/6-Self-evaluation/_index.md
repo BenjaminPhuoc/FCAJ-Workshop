@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship at **AWS** from **06-01-2026** to **06-30-2026**, I got a genuinely valuable chance to put what I'd learned in school into a real working environment.
+During my internship at **AWS** from **06-01-2026** to **07-30-2026**, I got a genuinely valuable chance to put what I'd learned in school into a real working environment.
 
 I was assigned directly to the **"AI Pulmonary Diagnostic Suite"** project — an AI-powered platform to help diagnose pulmonary disease. Setting up an automated `MLOps` pipeline from scratch and deploying models on a `Serverless` architecture (`Amazon S3, SageMaker, Lambda`, `API Gateway`) was rough going at first. But working through it sharpened my `Python` skills, my instincts for `Cloud` system design, my ability to debug and troubleshoot a live system, and my habit of documenting technical work carefully.
 
