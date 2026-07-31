@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Typically, and as a standard practice, a worklog is maintained throughout the entire internship period, with weekly content organized as follows. The internship program ran for **9 weeks**, from 01/06/2026 to 30/07/2026, during which I was responsible for the **AI/Data - MLOps & Pipeline** track (while my teammate handled Frontend/API) for the **"AI Pulmonary Diagnostic Suite"** project — a pneumonia diagnostic system based on chest X-ray images, built and deployed following a standard MLOps workflow on AWS:
+Typically, and as a standard practice, a worklog is maintained throughout the entire internship period, with weekly content organized as follows. The internship program ran for **9 weeks**, from 01/06/2026 to 30/07/2026, for the **"AI Pulmonary Diagnostic Suite"** project — a pneumonia diagnostic system based on chest X-ray images, built and deployed following a standard MLOps workflow on AWS:
 
 **Week 1:** [Program orientation, setting up the working environment, and getting familiar with core AWS services (EC2, S3, VPC, IAM)](1.1-week1/)
 
