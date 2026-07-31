@@ -7,18 +7,18 @@ pre: " <b> 1.2. </b> "
 ---
 
 ### Week 2 Objectives
-* Generate a small dataset (Toy Dataset) for experimental training to optimize AWS costs.
-* Complete and submit the first technical Blog post to the portal.
+* Build a lightweight Toy Dataset for experimental training runs to keep AWS costs down.
+* Draft, finalize, and submit the first technical blog post.
 
 ### Task Progress
 | Day | Task | Start Date | Completion Date | Reference Sources |
 | --- | --- | --- | --- | --- |
-| Mon | - Team finalized architecture: Shifted entirely to Serverless (API Gateway + Lambda + SageMaker) to optimize operational costs. | 06/08/2026 | 06/08/2026 | [AWS Serverless Architecture](https://aws.amazon.com/serverless/) |
-| Tue | - Assigned to write the `create_toy_dataset.py` Python script to randomly extract a class-balanced sample of 120 chest X-ray images. | 06/09/2026 | 06/09/2026 | [Python Pandas Docs](https://pandas.pydata.org/docs/) |
-| Wed | - Executed data splitting script and verified Train/Val folder integrity.<br>- Teammate created the Amazon S3 bucket. | 06/10/2026 | 06/10/2026 | [Amazon S3 User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/) |
-| Thu | - Used AWS CLI to sync (upload) the complete Toy Dataset to the project S3 bucket. | 06/11/2026 | 06/11/2026 | [AWS CLI S3 Commands](https://docs.aws.amazon.com/cli/latest/reference/s3/) |
-| Fri | - Collaborated on writing and formatting Blog 1 on "Serverless MLOps Architecture" for submission. | 06/12/2026 | 06/12/2026 | [FCAJ Blog Guidelines](https://cloudjourney.awsstudygroup.com/) |
+| Mon | - Locked in the architecture with the team: moving fully to Serverless (API Gateway + Lambda + SageMaker) to cut operating costs. | 06/08/2026 | 06/08/2026 | [AWS Serverless Architecture](https://aws.amazon.com/serverless/) |
+| Tue | - Took on writing `create_toy_dataset.py`, a script that randomly samples 120 class-balanced chest X-ray images. | 06/09/2026 | 06/09/2026 | [Python Pandas Docs](https://pandas.pydata.org/docs/) |
+| Wed | - Ran the splitting script and double-checked the Train/Val folder structure.<br>- Teammate provisioned the Amazon S3 bucket in parallel. | 06/10/2026 | 06/10/2026 | [Amazon S3 User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/) |
+| Thu | - Synced the finished Toy Dataset up to the project's S3 bucket via AWS CLI. | 06/11/2026 | 06/11/2026 | [AWS CLI S3 Commands](https://docs.aws.amazon.com/cli/latest/reference/s3/) |
+| Fri | - Worked together on drafting and formatting Blog 1, "Serverless MLOps Architecture," ahead of submission. | 06/12/2026 | 06/12/2026 | [FCAJ Blog Guidelines](https://cloudjourney.awsstudygroup.com/) |
 
 ### Key Achievements
-* Prepared downscaled dataset on S3. Subsequent code testing now takes only 1–2 minutes, ensuring FinOps compliance.
-* Submitted Blog Post 1 on schedule.
+* Got a downsized dataset live on S3 — later code tests now finish in 1–2 minutes, keeping us within FinOps guidelines.
+* Blog Post 1 submitted on time.

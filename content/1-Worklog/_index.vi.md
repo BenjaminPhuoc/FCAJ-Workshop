@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong suốt thời gian thực tập với nội dung các tuần như sau. Chương trình thực tập kéo dài **9 tuần**, từ 01/06/2026 đến 30/07/2026, trong đó tôi phụ trách mảng **AI/Data - MLOps & Pipeline** (bạn cùng nhóm phụ trách Frontend/API) cho dự án **"AI Pulmonary Diagnostic Suite"** — hệ thống chẩn đoán viêm phổi qua ảnh X-Quang, được xây dựng và triển khai theo mô hình MLOps chuẩn trên nền tảng AWS:
+Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong suốt thời gian thực tập với nội dung các tuần như sau. Chương trình thực tập kéo dài **9 tuần**, từ 01/06/2026 đến 30/07/2026, cho dự án **"AI Pulmonary Diagnostic Suite"** — hệ thống chẩn đoán viêm phổi qua ảnh X-Quang, được xây dựng và triển khai theo mô hình MLOps chuẩn trên nền tảng AWS:
 
 **Tuần 1:** [Định hướng chương trình, setup môi trường làm việc và làm quen với các dịch vụ cốt lõi của AWS (EC2, S3, VPC, IAM)](1.1-week1/)
 
